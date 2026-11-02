@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #927057;
+  color: #ffffff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+main {
+  position: relative;
+  width: 470px;
+  max-width: 100%;
+  margin: 50px auto 0;
+  padding: 50px 60px 70px;
+  background: #d5c395;
+  color: #927057;
+}
+
+main::before {
+  position: absolute;
+  top: -30px;
+  left: 259px;
+  display: block;
+  width: 68px;
+  height: 35px;
+  background: url('images/triangle.png') no-repeat 0 0;
+  content: "";
+}
+
+.image-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 123px;
+  height: 123px;
+  border: 5px solid #d5c395;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.widget-header {
+  margin: 15px 0 35px;
+  text-align: center;
+}
+
+.widget-header h1 {
+  margin: 0 0 8px;
+  color: #927057;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+
+.widget-header p {
+  margin: 0;
+  color: #efe1c4;
+  font-size: 1em;
+  text-align: center;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-field img {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.form-field input {
+  width: 85%;
+  padding: 10px 10px 10px 60px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #efe1c4;
+  color: #927057;
+  font: inherit;
+  font-size: 1.1em;
+}
+
+.form-field input::placeholder {
+  color: #927057;
+  opacity: 0.8;
+}
+
+input[type="submit"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #927057;
+  color: #d5c395;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.5em;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus-visible {
+  background: #76563f;
+}
+
+input:focus-visible {
+  box-shadow: 0 0 0 3px #ffffff;
+}
+
+footer {
+  margin-top: 30px;
+  color: #efe1c4;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 35px 25px 45px;
+  }
+
+  main::before {
+    left: auto;
+    right: 25px;
+  }
+
+  .form-field input {
+    width: 100%;
+  }
+}
